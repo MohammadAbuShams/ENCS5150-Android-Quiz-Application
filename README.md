@@ -1,25 +1,36 @@
-# ENCS5150-Android-Quiz-Application
+# Simple Quiz Game
 
-# Quiz Application
+## Overview
 
-I made my first Android app using Java. It's a quiz app where users answer five questions, each with four multiple-choice options. After answering all the questions, the app shows the user their score for each question and their total score at the end.
+Welcome to the Simple Quiz Game! This Android app challenges users with a set of 5 multiple-choice questions, each with 4 possible answers. Players have 10 seconds to answer each question. The app tracks the user's score and provides feedback based on their performance.
 
-<div style="display:flex; justify-content:center;">
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/154f49f2-03cc-4994-b732-22a714a74d8f" alt="Question 1" width="45%">
+## Features
 
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/5b312557-3e94-449b-8221-302c1d85ec60" alt="Question 2" width="45%">
-</div>
+- **Main Activity:**
+  - **Game Title:** "Simple Quiz Game" (centered and bold)
+  - **Score Display:** Shows the current score (green colored)
+  - **Timer Display:** Shows remaining time in seconds (red colored)
+  - **Question Display:** Shows the current question and its number
+  - **Answer Choices:** Four buttons for user answers
+  - **User Info:** Displays the name and ID
 
+- **Result Activity:**
+  - **Feedback:** Displays "You Won!" or "You Lost!" based on performance
+  - **Score:** Shows the result as "Result/5" (e.g., "2/5" if the user scored 2)
+  - **Reset Button:** Restarts the game (red background with white text)
 
-<div style="display:flex; justify-content:center;">
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/df3eb9be-3579-4f00-b539-374a61b9f603" alt="Question 3" width="45%">
+## Game Logic
 
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/5ab1f58a-1d43-404c-9ccb-ecf715d2ec7c" alt="Question 4" width="45%">
-</div>
+1. The game starts automatically upon opening the application.
+2. The countdown starts at 10 seconds and decreases by one every second.
+3. The score starts at 0 and increases by one for every correct answer.
+4. If the user does not answer within 10 seconds, the game proceeds to the next question, resetting the timer.
+5. Correct answers immediately proceed to the next question and reset the timer.
+6. After all 5 questions, the app switches to the Result Activity.
+7. A score of 4 or 5 results in a "You Won!" message; otherwise, the message is "You Lost!"
+8. The score display shows the user's score out of 5 (e.g., "2/5").
+9. Clicking the Reset button restarts the game, resetting the score and timer, and returning to the Main Activity.
 
+## User Interface Design
 
-<div style="display:flex; justify-content:center;">
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/a052f96b-3fe8-4659-b004-b672d5f28ef7" alt="Question 5" width="45%">
-
-  <img src="https://github.com/MohammadAbuShams/ENCS5150-Android-Quiz-Application/assets/116977597/307cead7-d478-4681-b067-6ab0a0fbbe72" alt="Question 6" width="45%">
-</div>
+- The app is designed for clarity and ease of use, with specific color coding and layout as described in the requirements.
